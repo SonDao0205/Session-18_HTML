@@ -19,7 +19,6 @@ if (num == 0) {
         else if (hundreds === 7) result += "Bảy trăm";
         else if (hundreds === 8) result += "Tám trăm";
         else if (hundreds === 9) result += "Chín trăm";
-
         if (tens == 0 && ones > 0) result += " linh";
     }
 
@@ -45,7 +44,6 @@ if (num == 0) {
         else if (tens === 9) result += " chín mươi";
 
         if (ones > 0) {
-            if (tens === 0 && hundreds > 0) result += " linh";
             if (ones === 1) result += " một";
             else if (ones === 2) result += " hai";
             else if (ones === 3) result += " ba";
@@ -58,5 +56,4 @@ if (num == 0) {
         }
     }
 }
-
-alert(result.charAt(0).toUpperCase() + result.slice(1));
+document.write(`${result}`)
